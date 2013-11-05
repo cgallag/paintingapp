@@ -25,7 +25,7 @@ pygame.display.set_caption('KenPaints')
 pygame.mouse.set_visible(True)
 
 colorCircle = pygame.Rect(50, 50, 480, 480)
-colorwheelImg = pygame.image.load('Color_circle_(hue-sat).png')
+colorwheelImg = pygame.image.load('Color_circle_(hue-sat).png').convert()
 windowSurface.blit(colorwheelImg, colorCircle)
 
 pygame.display.update()

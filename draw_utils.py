@@ -22,3 +22,6 @@ def drawCanvas(windowwidth, windowheight, caption, bgcolor):
     pygame.display.update()
     return windowSurface
     
+def getrgb(hue):
+    (r,g,b) = colorsys.hls_to_rgb(hue, 0.5, 0.5)
+    return (round(r*255), round(g*255), round(b*255))
